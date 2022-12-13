@@ -26,7 +26,18 @@
             <div class="welcome">
                 <?php if ($userConnected) {?>
                     
-                    <h1>Welcome to your agenda, <br><?php echo $login ?> ! </h1>
+                    <h1>Welcome to your agenda, <br>
+                    <?php echo $login . 
+                        "<style>
+                            .welcome h1 {
+                                display: flex;
+                                justify-content: center;
+                                text-align: center;
+                                font-size: 80px;
+                                margin-bottom: 40px;
+                                margin-top: 20%;
+                            }
+                        </style>"?> ! </h1>
                     
                 <?php } else {?>
                     <h1>Online agenda</h1>
